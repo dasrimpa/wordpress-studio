@@ -4,78 +4,113 @@
 .banner {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.banner-image {
+    max-width: 30%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.banner-content {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .banner-content h2 {
     color: rgba(211, 59, 114, 1);
     font-family: 'Lexend', sans-serif;
     letter-spacing: 0.08em;
+    font-size: 15px;
 }
 
 .banner-content h1 {
-    background: -webkit-linear-gradient(-45deg, #3d3d7e 59%, #ff4545 100%);
+    background: -webkit-linear-gradient(-45deg, #3d3d7e 50%, #ff4545 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
+    font-size: 20px;
 }
 
 .banner-content h3 {
     color: rgba(61, 62, 126, 1);
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 13px;
 }
 
-.banner-content h4 {
+.banner-content p {
     color: rgba(61, 62, 126, 1);
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.02em;
+    font-size: 10px;
 }
 
-.below-banner-details {
-    text-align: center;
+.banner-content-free {
+    font-weight: bold;
 }
 
-.banner-content h4 span.banner-content-started {
-    padding-left: 20px;
+.banner-content-started {
     background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
     box-shadow: 0px 8px 14px rgba(244, 111, 36, 0.25);
+    border-radius: 30px;
+    margin-left: 10px;
+}
+
+.banner-content-started a {
+    color: white;
+    text-decoration: none;
+}
+
+.below-banner {
     text-align: center;
 }
 
-.below-banner-details h2 {
-    background: -webkit-linear-gradient(left, #3d3d7e 35%, #ff4545 100%);
+.below-banner h2 {
+    background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
 
-.below-banner-details p {
+.below-banner p {
     color: rgba(115, 115, 143, 1);
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: 0.01em;
 }
 
-@media screen and (min-width: 320px) {
-    .banner-image {
-        max-width: 30%;
-        padding-left: 80px;
-        padding-top: 20px;
-    }
-    .banner-content {
-        padding-left: 30px;
-    }
-    .banner-content h2 {
-        font-size: 15px;
-    }
-    .banner-content h1 {
-        font-size: 20px;
-    }
-    .banner-content h3 {
-        font-size: 13px;
-    }
-    .banner-content h4 {
-        font-size: 10px;
-    }
+.below-banner img {
+    width: 300px;
+}
+
+.below-banner-custom-website {
+    text-align: center;
+}
+
+.below-banner-custom-website h2 {
+    letter-spacing: 0.02em;
+    color: #4D4EA2;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}
+
+.below-banner-custom-website p {
+    letter-spacing: 0.01em;
+    color: #575779;
+    font-family: 'Open Sans', sans-serif;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.below-banner-custom-website.bullet::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
 }
 
 @media screen and (min-width: 769px) {
@@ -83,13 +118,13 @@
         justify-content: space-between;
     }
     .banner-image {
-        padding-right: 50px;
+        padding-right: 40px;
     }
     .banner-icon-bar {
         width: 35px;
         height: 140px;
         border-radius: 25px 0px 0px 25px;
-        top: 30%;
+        top: 60%;
     }
     .banner-icon-bar a {
         padding: 15px 13px 0px 13px;
@@ -111,6 +146,17 @@
         padding-top: 20px;
         padding-left: 90px;
     }
+    .below-banner p {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    .below-banner img {
+        width: 400px;
+    }
+    .below-banner-custom-website p {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -121,7 +167,7 @@
     .banner-icon-bar {
         width: 50px;
         height: 170px;
-        top: 35%;
+        top: 80%;
     }
     .banner-content {
         padding-top: 30px;
@@ -137,17 +183,49 @@
     .banner-content h3 {
         font-size: 25px;
     }
-    .banner-content h4 {
-        font-size: 20px;
+    .banner-content p {
+        font-size: 18px;
+    }
+    .below-banner h2 {
+        font-size: 40px;
+    }
+    .below-banner p {
+        padding-right: 70px;
+        padding-left: 70px;
+        font-size: 18px;
+    }
+    .below-banner img {
+        width: 500px;
+    }
+    .below-banner-custom-website h2 {
+        font-size: 40px;
+    }
+    .below-banner-custom-website p {
+        padding-right: 70px;
+        padding-left: 70px;
+        font-size: 18px;
+    }
+    .below-custom-website {
+        display: flex;
+    }
+    .below-custom-website-button ul li {
+        display: inline-flex;
+    }
+    .below-custom-website-first-button {
+        background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
+        box-shadow: 0px 8px 14px rgba(244, 111, 36, 0.25);
+        text-align: center;
+        width: 200px;
+        height: 20px;
     }
 }
 
 @media screen and (min-width: 1201px) {
     .banner-image {
-        max-width: 500px;
+        max-width: 550px;
     }
     .banner-icon-bar {
-        top: 40%;
+        top: 90%;
         height: 200px;
     }
     .banner-icon-bar a {
@@ -182,8 +260,13 @@
     .banner-content h3 {
         font-size: 30px;
     }
-    .banner-content h4 {
-        font-size: 25px;
+    .below-banner p {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .below-banner-custom-website p {
+        padding-left: 120px;
+        padding-right: 120px;
     }
 }
 
@@ -207,12 +290,12 @@
     .banner-content h4 {
         font-size: 25px;
     }
+    .below-banner img {
+        width: 550px;
+    }
 }
 
 @media screen and (min-width: 1900px) {
-    .banner {
-        justify-content: space-between;
-    }
     .banner-image {
         max-width: 801.91px;
         max-height: 800.16px;
@@ -266,5 +349,31 @@
     .banner-content h4 {
         font-size: 24px;
         padding-top: 20px;
+    }
+    .below-banner h2 {
+        font-size: 50px;
+        line-height: 95%;
+    }
+    .below-banner p {
+        width: 1049px;
+        padding-left: 443px;
+        padding-right: 443px;
+    }
+    .below-banner img {
+        width: 745px;
+        height: 558px;
+    }
+    .below-banner-custom-website h2 {
+        font-size: 45px;
+        width: 530px;
+        padding-left: 702px;
+        padding-right: 700px;
+        line-height: 110%;
+    }
+    .below-banner-custom-website p {
+        width: 989px;
+        padding-left: 464px;
+        padding-right: 467px;
+        line-height: 160%;
     }
 }
