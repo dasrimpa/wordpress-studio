@@ -1,379 +1,730 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-.banner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.banner-image {
-    max-width: 30%;
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
-.banner-content {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.banner-content h2 {
-    color: rgba(211, 59, 114, 1);
-    font-family: 'Lexend', sans-serif;
-    letter-spacing: 0.08em;
-    font-size: 15px;
-}
-
-.banner-content h1 {
-    background: -webkit-linear-gradient(-45deg, #3d3d7e 50%, #ff4545 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-}
-
-.banner-content h3 {
-    color: rgba(61, 62, 126, 1);
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-.banner-content p {
-    color: rgba(61, 62, 126, 1);
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: 0.02em;
-    font-size: 10px;
-}
-
-.banner-content-free {
-    font-weight: bold;
-}
-
-.banner-content-started {
-    background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
-    box-shadow: 0px 8px 14px rgba(244, 111, 36, 0.25);
-    border-radius: 30px;
-    margin-left: 10px;
-}
-
-.banner-content-started a {
-    color: white;
-    text-decoration: none;
-}
-
-.below-banner {
-    text-align: center;
-}
-
-.below-banner h2 {
-    background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-}
-
-.below-banner p {
-    color: rgba(115, 115, 143, 1);
-    padding-left: 15px;
-    padding-right: 15px;
-    letter-spacing: 0.01em;
-}
-
-.below-banner img {
-    width: 300px;
-}
-
-.below-banner-custom-website {
-    text-align: center;
-}
-
-.below-banner-custom-website h2 {
-    letter-spacing: 0.02em;
-    color: #4D4EA2;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-}
-
-.below-banner-custom-website p {
-    letter-spacing: 0.01em;
-    color: #575779;
-    font-family: 'Open Sans', sans-serif;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.below-banner-custom-website.bullet::before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    border-radius: 12px;
-}
-
-@media screen and (min-width: 769px) {
+    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&400display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;800;900&family=Open+Sans&display=swap');
+    img {
+        max-width: 100%;
+    }
+    
     .banner {
-        justify-content: space-between;
-    }
-    .banner-image {
-        padding-right: 40px;
-    }
-    .banner-icon-bar {
-        width: 35px;
-        height: 140px;
-        border-radius: 25px 0px 0px 25px;
-        top: 60%;
-    }
-    .banner-icon-bar a {
-        padding: 15px 13px 0px 13px;
-        width: 10px;
-    }
-    .banner-icon-bar {
-        background-color: #17103E;
-        transition: all 0.3s ease;
-        position: absolute;
-        right: 0%;
-    }
-    .banner-icon-bar a {
-        display: block;
-    }
-    .banner-icon-bar a:hover {
-        opacity: 0.1;
-    }
-    .banner-content {
-        padding-top: 20px;
-        padding-left: 90px;
-    }
-    .below-banner p {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .below-banner img {
-        width: 400px;
-    }
-    .below-banner-custom-website p {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-}
-
-@media screen and (min-width: 1025px) {
-    .banner-image {
-        max-width: 460px;
-        padding-right: 70px;
-    }
-    .banner-icon-bar {
-        width: 50px;
-        height: 170px;
-        top: 80%;
-    }
-    .banner-content {
-        padding-top: 30px;
-        padding-left: 120px;
-    }
-    .banner-content h2 {
-        font-size: 25px;
-    }
-    .banner-content h1 {
-        font-size: 40px;
-        width: 260px;
-    }
-    .banner-content h3 {
-        font-size: 25px;
-    }
-    .banner-content p {
-        font-size: 18px;
-    }
-    .below-banner h2 {
-        font-size: 40px;
-    }
-    .below-banner p {
-        padding-right: 70px;
-        padding-left: 70px;
-        font-size: 18px;
-    }
-    .below-banner img {
-        width: 500px;
-    }
-    .below-banner-custom-website h2 {
-        font-size: 40px;
-    }
-    .below-banner-custom-website p {
-        padding-right: 70px;
-        padding-left: 70px;
-        font-size: 18px;
-    }
-    .below-custom-website {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .below-custom-website-button ul li {
-        display: inline-flex;
+    
+    .banner-image {
+        max-width: 30%;
+        padding-top: 20px;
     }
-    .below-custom-website-first-button {
+    
+    .banner-content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .banner-content h2 {
+        color: rgba(211, 59, 114, 1);
+        font-family: 'Lexend', sans-serif;
+        letter-spacing: 0.08em;
+        font-size: 15px;
+    }
+    
+    .banner-content h1 {
+        background: -webkit-linear-gradient(-45deg, #3d3d7e 50%, #ff4545 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 20px;
+    }
+    
+    .banner-content h3 {
+        color: rgba(61, 62, 126, 1);
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    .banner-content p {
+        color: rgba(61, 62, 126, 1);
+        font-family: 'Open Sans', sans-serif;
+        letter-spacing: 0.02em;
+        font-size: 10px;
+    }
+    
+    .banner-content-free {
+        font-weight: bold;
+    }
+    
+    .banner-content-started {
         background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
         box-shadow: 0px 8px 14px rgba(244, 111, 36, 0.25);
+        border-radius: 30px;
+        margin-left: 10px;
+        padding: 5px 25px 5px 25px;
+    }
+    
+    .banner-content-started a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .below-banner {
         text-align: center;
-        width: 200px;
-        height: 20px;
     }
-}
-
-@media screen and (min-width: 1201px) {
-    .banner-image {
-        max-width: 550px;
-    }
-    .banner-icon-bar {
-        top: 90%;
-        height: 200px;
-    }
-    .banner-icon-bar a {
-        padding: 20px 15px 0px 15px;
-    }
-    .banner-icon-bar .banner-icon-bar-facebook {
-        Width: 16.83px;
-        Height: 28.05px;
-    }
-    .banner-icon-bar .banner-icon-bar-linkdn {
-        Width: 18.7px;
-        Height: 18.7px;
-    }
-    .banner-icon-bar .banner-icon-bar-twitter {
-        Width: 23.37px;
-        Height: 18.7px;
-    }
-    .banner-icon-bar .banner-icon-bar-lasticon {
-        Width: 27.11px;
-        Height: 27.11px;
-    }
-    .banner-content {
-        padding-left: 100px;
-    }
-    .banner-content h2 {
-        font-size: 30px;
-    }
-    .banner-content h1 {
-        font-size: 50px;
-        width: 340px;
-    }
-    .banner-content h3 {
-        font-size: 30px;
-    }
-    .below-banner p {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
-    .below-banner-custom-website p {
-        padding-left: 120px;
-        padding-right: 120px;
-    }
-}
-
-@media screen and (min-width: 1400px) {
-    .banner-image {
-        max-width: 550px;
-    }
-    .banner-content {
-        padding-left: 200px;
-    }
-    .banner-content h2 {
-        font-size: 30px;
-    }
-    .banner-content h1 {
-        font-size: 50px;
-        width: 340px;
-    }
-    .banner-content h3 {
-        font-size: 30px;
-    }
-    .banner-content h4 {
-        font-size: 25px;
-    }
-    .below-banner img {
-        width: 550px;
-    }
-}
-
-@media screen and (min-width: 1900px) {
-    .banner-image {
-        max-width: 801.91px;
-        max-height: 800.16px;
-        padding-right: 100px;
-        padding-top: 102.83px;
-    }
-    .banner-icon-bar {
-        width: 74px;
-        height: 321px;
-        border-radius: 25px 0px 0px 25px;
-        top: 75%;
-    }
-    .banner-icon-bar a {
-        padding-bottom: 34px;
-        padding-left: 30.27px;
-    }
-    .banner-icon-bar .banner-icon-bar-facebook {
-        Width: 16.83px;
-        Height: 28.05px;
-        padding-top: 40px;
-    }
-    .banner-icon-bar .banner-icon-bar-linkdn {
-        Width: 18.7px;
-        Height: 18.7px;
-    }
-    .banner-icon-bar .banner-icon-bar-twitter {
-        Width: 23.37px;
-        Height: 18.7px;
-    }
-    .banner-icon-bar .banner-icon-bar-lasticon {
-        Width: 27.11px;
-        Height: 27.11px;
-    }
-    .banner-content {
-        padding-left: 310px;
-        padding-top: 178px;
-    }
-    .banner-content h2 {
-        font-size: 36px;
-        margin-bottom: -40px;
-    }
-    .banner-content h1 {
-        font-size: 80px;
-        width: 550px;
-        line-height: 105%;
-        margin-bottom: -20px;
-    }
-    .banner-content h3 {
-        font-size: 36px;
-    }
-    .banner-content h4 {
-        font-size: 24px;
-        padding-top: 20px;
-    }
+    
     .below-banner h2 {
-        font-size: 50px;
-        line-height: 95%;
+        background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
     }
+    
     .below-banner p {
-        width: 1049px;
-        padding-left: 443px;
-        padding-right: 443px;
+        color: rgba(115, 115, 143, 1);
+        padding-left: 15px;
+        padding-right: 15px;
+        letter-spacing: 0.01em;
     }
-    .below-banner img {
-        width: 745px;
-        height: 558px;
+    
+    .below-banner-custom-website {
+        text-align: center;
     }
+    
     .below-banner-custom-website h2 {
-        font-size: 45px;
-        width: 530px;
-        padding-left: 702px;
-        padding-right: 700px;
-        line-height: 110%;
+        letter-spacing: 0.02em;
+        color: #4D4EA2;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
     }
+    
     .below-banner-custom-website p {
-        width: 989px;
-        padding-left: 464px;
-        padding-right: 467px;
-        line-height: 160%;
+        letter-spacing: 0.01em;
+        color: #575779;
+        font-family: 'Open Sans', sans-serif;
+        padding-right: 15px;
+        padding-left: 15px;
     }
-}
+    
+    .below-custom-website img {
+        padding-left: 15px;
+    }
+    
+    .below-custom-website-details {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .below-custom-website-details h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        color: rgba(61, 62, 126, 1);
+    }
+    
+    .below-custom-website-bullet h3::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 12px;
+        background-color: rgba(252, 74, 90, 1);
+    }
+    
+    .below-custom-website-bullet h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        color: rgba(61, 62, 126, 1);
+    }
+    
+    .below-custom-website-details p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(87, 87, 121, 1)
+    }
+    
+    .below-custom-website-logo img {
+        margin-left: -20px;
+    }
+    
+    .below-custom-website-first-button {
+        background: #484ACC;
+        box-shadow: 0px 8px 30px rgba(72, 74, 204, 0.15);
+        border-radius: 30px;
+        padding: 15px 30px;
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        margin-left: -30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    .below-custom-website-second-button {
+        background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
+        box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
+        border-radius: 30px;
+        padding: 15px 45px;
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    
+    .ecommerce-solution {
+        text-align: center;
+    }
+    
+    .ecommerce-solution h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        color: #4D4EA2;
+        letter-spacing: 0.02em;
+    }
+    
+    .ecommerce-solution p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        color: #575779;
+        letter-spacing: 0.01em;
+    }
+    
+    .below-ecommerce-solution {
+        display: flex;
+    }
+    
+    .below-ecommerce-solution-button ul li {
+        display: inline-flex;
+    }
+    
+    .below-ecommerce-solution-details h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        color: rgba(61, 62, 126, 1);
+    }
+    
+    .below-ecommerce-solution-bullet h3::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 12px;
+        background-color: rgba(252, 74, 90, 1);
+    }
+    
+    .below-ecommerce-solution-bullet h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: rgba(61, 62, 126, 1);
+        letter-spacing: 0.02em;
+    }
+    
+    .below-ecommerce-solution-details p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(115, 115, 143, 1);
+        letter-spacing: 0.02em;
+    }
+    
+    .wordpress-logo img {
+        margin-left: -20px;
+    }
+    
+    .below-ecommerce-solution-first-button {
+        background: #484ACC;
+        box-shadow: 0px 8px 30px rgba(72, 74, 204, 0.15);
+        border-radius: 30px;
+        display: inline-block;
+        padding: 20px 35px;
+        text-decoration: none;
+        color: white;
+        margin-left: -30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    .below-ecommerce-solution-second-button {
+        background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
+        box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
+        border-radius: 30px;
+        padding: 20px 35px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    
+    .wordpress-conversion {
+        text-align: center;
+    }
+    
+    .wordpress-conversion h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        color: #4D4EA2;
+        letter-spacing: 0.02em;
+    }
+    
+    .wordpress-conversion p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        color: #575779;
+        letter-spacing: 0.01em;
+    }
+    
+    .below-wordpress-conversion {
+        display: flex;
+    }
+    
+    .below-wordpress-conversion-button ul li {
+        display: inline-flex;
+    }
+    
+    .below-wordpress-conversion-details h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        color: rgba(61, 62, 126, 1);
+    }
+    
+    .below-wordpress-conversion-bullet h3::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 12px;
+        background-color: rgba(252, 74, 90, 1);
+    }
+    
+    .below-wordpress-conversion-bullet h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: rgba(61, 62, 126, 1);
+        letter-spacing: 0.02em;
+    }
+    
+    .below-wordpress-conversion-details p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(115, 115, 143, 1);
+        letter-spacing: 0.02em;
+    }
+    
+    .wordpress-logo img {
+        margin-left: 5px;
+    }
+    
+    .below-wordpress-conversion-first-button {
+        background: #484ACC;
+        box-shadow: 0px 8px 30px rgba(72, 74, 204, 0.15);
+        border-radius: 30px;
+        display: inline-block;
+        padding: 20px 35px;
+        text-decoration: none;
+        color: white;
+        margin-left: -30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    .below-wordpress-conversion-second-button {
+        background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
+        box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
+        border-radius: 30px;
+        padding: 20px 35px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    
+    .another-wordpress-conversion {
+        text-align: center;
+    }
+    
+    .another-wordpress-conversion h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        color: #4D4EA2;
+        letter-spacing: 0.02em;
+    }
+    
+    .another-wordpress-conversion p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        color: #575779;
+        letter-spacing: 0.01em;
+    }
+    
+    .below-another-wordpress-conversion {
+        display: flex;
+    }
+    
+    .below-another-wordpress-conversion-button ul li {
+        display: inline-flex;
+    }
+    
+    .below-another-wordpress-conversion-details h2 {
+        font-family: 'Lato', sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        color: rgba(61, 62, 126, 1);
+    }
+    
+    .below-another-wordpress-conversion-bullet h3::before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        display: inline-block;
+        border-radius: 12px;
+        background-color: rgba(252, 74, 90, 1);
+    }
+    
+    .below-another-wordpress-conversion-bullet h3 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        color: rgba(61, 62, 126, 1);
+        letter-spacing: 0.02em;
+    }
+    
+    .below-another-wordpress-conversion-details p {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: rgba(115, 115, 143, 1);
+        letter-spacing: 0.02em;
+    }
+    
+    .wordpress-logo img {
+        margin-left: 5px;
+    }
+    
+    .below-another-wordpress-conversion-first-button {
+        background: #484ACC;
+        box-shadow: 0px 8px 30px rgba(72, 74, 204, 0.15);
+        border-radius: 30px;
+        display: inline-block;
+        padding: 20px 35px;
+        text-decoration: none;
+        color: white;
+        margin-left: -30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+    }
+    
+    .below-another-wordpress-conversion-second-button {
+        background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
+        box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
+        border-radius: 30px;
+        padding: 20px 35px;
+        text-decoration: none;
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+    
+    @media screen and (min-width: 769px) {
+        .banner {
+            justify-content: space-between;
+        }
+        .banner-image {
+            padding-right: 40px;
+        }
+        .banner-icon-bar {
+            width: 35px;
+            height: 140px;
+            border-radius: 25px 0px 0px 25px;
+            top: 40%;
+        }
+        .banner-icon-bar a {
+            padding: 15px 13px 0px 13px;
+            width: 10px;
+        }
+        .banner-icon-bar {
+            background-color: #17103E;
+            transition: all 0.3s ease;
+            position: absolute;
+            right: 0%;
+        }
+        .banner-icon-bar a {
+            display: block;
+        }
+        .banner-icon-bar a:hover {
+            opacity: 0.1;
+        }
+        .banner-content {
+            padding-top: 20px;
+            padding-left: 90px;
+        }
+        .below-banner p {
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+        .below-banner img {
+            width: 400px;
+        }
+        .below-banner-custom-website p {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .below-custom-website {
+            display: flex;
+        }
+        .below-custom-website-button ul li {
+            display: inline-flex;
+        }
+        .below-custom-website-details {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .below-custom-website img {
+            padding-left: 40px;
+        }
+        .below-custom-website-logo img {
+            margin-left: -60px;
+        }
+    }
+    
+    @media screen and (min-width: 1025px) {
+        .banner-image {
+            max-width: 460px;
+            padding-right: 70px;
+        }
+        .banner-icon-bar {
+            width: 50px;
+            height: 170px;
+            top: 60%;
+        }
+        .banner-content {
+            padding-top: 30px;
+            padding-left: 120px;
+        }
+        .banner-content h2 {
+            font-size: 25px;
+        }
+        .banner-content h1 {
+            font-size: 40px;
+            width: 260px;
+        }
+        .banner-content h3 {
+            font-size: 25px;
+        }
+        .banner-content p {
+            font-size: 18px;
+        }
+        .below-banner h2 {
+            font-size: 40px;
+        }
+        .below-banner p {
+            padding-right: 70px;
+            padding-left: 70px;
+            font-size: 18px;
+        }
+        .below-banner img {
+            width: 500px;
+        }
+        .below-banner-custom-website h2 {
+            font-size: 40px;
+        }
+        .below-banner-custom-website p {
+            padding-right: 70px;
+            padding-left: 70px;
+            font-size: 18px;
+        }
+        .below-custom-website-details {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .below-custom-website img {
+            padding-left: 80px;
+        }
+        .below-custom-website-logo img {
+            margin-left: -100px;
+        }
+    }
+    
+    @media screen and (min-width: 1201px) {
+        .banner-image {
+            max-width: 530px;
+        }
+        .banner-icon-bar {
+            height: 200px;
+        }
+        .banner-icon-bar a {
+            padding: 20px 15px 0px 15px;
+        }
+        .banner-icon-bar .banner-icon-bar-facebook {
+            Width: 16.83px;
+            Height: 28.05px;
+        }
+        .banner-icon-bar .banner-icon-bar-linkdn {
+            Width: 18.7px;
+            Height: 18.7px;
+        }
+        .banner-icon-bar .banner-icon-bar-twitter {
+            Width: 23.37px;
+            Height: 18.7px;
+        }
+        .banner-icon-bar .banner-icon-bar-lasticon {
+            Width: 27.11px;
+            Height: 27.11px;
+        }
+        .banner-content {
+            padding-left: 150px;
+        }
+        .banner-content h2 {
+            font-size: 30px;
+        }
+        .banner-content h1 {
+            font-size: 50px;
+            width: 340px;
+        }
+        .banner-content h3 {
+            font-size: 30px;
+        }
+        .below-banner p {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+        .below-banner-custom-website p {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+    }
+    
+    @media screen and (min-width: 1400px) {
+        .banner-image {
+            max-width: 600px;
+        }
+        .banner-content {
+            padding-left: 200px;
+        }
+        .below-banner img {
+            width: 550px;
+        }
+        .below-custom-website-details {
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .below-custom-website img {
+            padding-left: 100px;
+        }
+        .below-custom-website-logo img {
+            margin-left: -120px;
+        }
+    }
+    
+    @media screen and (min-width: 1900px) {
+        .banner-image {
+            max-width: 801.91px;
+            max-height: 800.16px;
+            padding-right: 100px;
+            padding-top: 102.83px;
+        }
+        .banner-icon-bar {
+            width: 74px;
+            height: 321px;
+            border-radius: 25px 0px 0px 25px;
+            top: 120%;
+        }
+        .banner-icon-bar a {
+            padding-bottom: 34px;
+            padding-left: 30.27px;
+        }
+        .banner-icon-bar .banner-icon-bar-facebook {
+            padding-top: 40px;
+        }
+        .banner-content {
+            padding-left: 310px;
+            padding-top: 178px;
+        }
+        .banner-content h2 {
+            font-size: 36px;
+            margin-bottom: -40px;
+        }
+        .banner-content h1 {
+            font-size: 80px;
+            width: 550px;
+            line-height: 105%;
+            margin-bottom: -20px;
+        }
+        .banner-content h3 {
+            font-size: 36px;
+        }
+        .banner-content h4 {
+            font-size: 24px;
+            padding-top: 20px;
+        }
+        .below-banner h2 {
+            font-size: 50px;
+            line-height: 95%;
+        }
+        .below-banner p {
+            width: 1049px;
+            padding-left: 443px;
+            padding-right: 443px;
+        }
+        .below-banner img {
+            width: 745px;
+            height: 558px;
+        }
+        .below-banner-custom-website h2 {
+            font-size: 45px;
+            width: 530px;
+            padding-left: 702px;
+            padding-right: 700px;
+            line-height: 110%;
+        }
+        .below-banner-custom-website p {
+            width: 989px;
+            padding-left: 464px;
+            padding-right: 467px;
+            line-height: 160%;
+        }
+        .below-custom-website img {
+            max-width: 847.99px;
+            max-height: 635.21px;
+            padding: 80px 0px 0px 220px;
+        }
+        .below-custom-website-details {
+            padding: 80px 0px 0px 130px;
+        }
+        .below-custom-website-details h2 {
+            font-size: 39px;
+            line-height: 39px;
+            width: 550px;
+        }
+        .below-custom-website-bullet h3 {
+            font-size: 24px;
+        }
+        .below-custom-website-details p {
+            font-size: 18px;
+            width: 489px;
+            line-height: 170%;
+        }
+        .below-custom-website-logo img {
+            max-width: 235px;
+            height: 79px;
+            margin-left: -240px;
+            margin-top: -100px;
+        }
+        .ecommerce-solution h2 {
+            font-size: 45px;
+            width: 485px;
+            padding-left: 719px;
+            padding-right: 716px;
+            line-height: 49.5px;
+        }
+        .ecommerce-solution p {
+            font-size: 18px;
+            line-height: 28.8px;
+            width: 1063px;
+            padding-right: 427px;
+            padding-left: 430px;
+        }
+    }

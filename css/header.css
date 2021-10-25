@@ -81,9 +81,6 @@ img {
         height: 40px;
         border-radius: 50px;
     }
-    .header-right--started a {
-        text-align: center;
-    }
     .header-right a:hover {
         background-color: inherit;
     }
