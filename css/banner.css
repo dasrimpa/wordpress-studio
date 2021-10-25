@@ -191,14 +191,6 @@
         letter-spacing: 0.01em;
     }
     
-    .below-ecommerce-solution {
-        display: flex;
-    }
-    
-    .below-ecommerce-solution-button ul li {
-        display: inline-flex;
-    }
-    
     .below-ecommerce-solution-details h2 {
         font-family: 'Lato', sans-serif;
         font-weight: 800;
@@ -488,6 +480,16 @@
         .below-custom-website-logo img {
             margin-left: -60px;
         }
+        .ecommerce-solution p {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+        .below-ecommerce-solution {
+            display: flex;
+        }
+        .below-ecommerce-solution-button ul li {
+            display: inline-flex;
+        }
     }
     
     @media screen and (min-width: 1025px) {
@@ -546,6 +548,14 @@
         .below-custom-website-logo img {
             margin-left: -100px;
         }
+        .ecommerce-solution h2 {
+            font-size: 40px;
+        }
+        .ecommerce-solution p {
+            padding-right: 70px;
+            padding-left: 70px;
+            font-size: 18px;
+        }
     }
     
     @media screen and (min-width: 1201px) {
@@ -592,6 +602,10 @@
             padding-right: 120px;
         }
         .below-banner-custom-website p {
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+        .ecommerce-solution p {
             padding-left: 120px;
             padding-right: 120px;
         }
@@ -726,5 +740,30 @@
             width: 1063px;
             padding-right: 427px;
             padding-left: 430px;
+        }
+        .below-ecommerce-solution img {
+            max-width: 847.99px;
+            max-height: 635.21px;
+            padding: 96.47px 0px 0px 130px;
+        }
+        .below-ecommerce-solution-details {
+            padding: 96.47px 0px 0px 250px;
+        }
+        .below-ecommerce-solution-details h2 {
+            font-size: 39px;
+            line-height: 39px;
+            width: 550px;
+        }
+        .below-ecommerce-solution-details h3 {
+            font-size: 24px;
+        }
+        .below-ecommerce-solution-details p {
+            font-size: 18px;
+            width: 485px;
+            line-height: 170%;
+        }
+        .below-ecommerce-solution-logo img {
+            padding-left: 0px;
+            padding-top: 10px;
         }
     }
