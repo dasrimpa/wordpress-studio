@@ -490,6 +490,20 @@
         .below-ecommerce-solution-button ul li {
             display: inline-flex;
         }
+        .below-ecommerce-solution-details {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .below-ecommerce-solution img {
+            padding-right: 0px;
+        }
+        .below-ecommerce-solution-logo img {
+            margin-left: -25px;
+            margin-right: 20px;
+        }
+        .kitbuilder-logo img {
+            padding-bottom: 15px;
+        }
     }
     
     @media screen and (min-width: 1025px) {
@@ -555,6 +569,16 @@
             padding-right: 70px;
             padding-left: 70px;
             font-size: 18px;
+        }
+        .below-ecommerce-solution-details {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        .below-ecommerce-solution-details img {
+            padding-right: 80px;
+        }
+        .kitbuilder-logo img {
+            margin-left: -100px;
         }
     }
     
@@ -765,5 +789,9 @@
         .below-ecommerce-solution-logo img {
             padding-left: 0px;
             padding-top: 10px;
+            padding-right: 80px;
+        }
+        .kitbuilder-logo img {
+            padding-bottom: 15px;
         }
     }
