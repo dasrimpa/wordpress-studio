@@ -11,6 +11,10 @@ img {
     max-width: 100%;
 }
 
+.header {
+    position: relative;
+}
+
 .header-right ul li a {
     font-family: 'Poppins Regular';
     font-size: 18px;
@@ -50,6 +54,15 @@ img {
 
 .header-right ul li {
     list-style: none;
+}
+
+.dropdown-content {
+    display: none;
+    color: black;
+    position: absolute;
+    background: #1B3DA2;
+    top: 100%;
+    width: 100%;
 }
 
 @media screen and (max-width: 768px) {
