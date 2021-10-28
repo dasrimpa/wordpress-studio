@@ -120,26 +120,67 @@
     }
 }
 
-@media screen and (min-width: 1820px) {
-    .footer__top {
-        min-height: 247px;
-        padding-top: 66px;
+@media screen and (min-width: 1200px) {
+    .footer-logo {
+        padding: 25px 0px 20px 150px;
     }
-    .footer-logo img {
-        min-width: 129px;
-        min-height: 83px;
-        padding: 0px 0px 84px 272px;
+    .footer-content {
+        padding-left: 70px;
+        padding-right: 70px;
     }
-    .footer__element p {
-        width: 357px;
-        padding: 0px 0px 54px 30px;
-        line-height: 17.38px;
-        text-align: initial;
+    .footer-logo h2 {
+        font-size: 24px;
     }
-    .footer__link--blog {
-        width: 50px;
-        line-height: 25.76px;
-        padding: 0px 0px 0px 140px;
+    .footer-logo p {
+        font-size: 16px;
+    }
+    .footer-content-quicklinks {
+        font-size: 20px;
+    }
+    .footer-content-quicklinks ul li {
+        font-size: 17px;
+    }
+    .footer-content-support {
+        padding-top: 2px;
+        font-size: 20px;
+    }
+    .footer-content-support ul li {
+        font-size: 17px;
+    }
+    .footer-content-sociallinks {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .footer-logo {
+        padding: 25px 0px 20px 200px;
+    }
+    .footer-content {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .footer-content-quicklinks {
+        padding-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .footer {
+        padding-top: 129px;
+    }
+    .footer-logo {
+        padding: 0px 0px 0px 265px;
+    }
+    .footer-logo h2 {
+        line-height: 22.8px;
+    }
+    .footer-logo p {
+        width: 338px;
+        line-height: 160%;
+    }
+    .footer-content {
+        padding: 0px 265px 0px 156px;
     }
     .footer__link--calculator {
         width: 50px;

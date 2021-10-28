@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 @font-face {
     font-family: 'Poppins Regular';
     src: url('../font/Poppins-Regular.woff') format('woff');
@@ -23,6 +24,12 @@ img {
 
 .header-right--home a {
     font-weight: 600;
+    color: #3A3A55;
+}
+
+.dropdown-menu {
+    font-family: 'Poppins Regular';
+    font-weight: 400;
     color: #3A3A55;
 }
 
@@ -56,13 +63,53 @@ img {
     list-style: none;
 }
 
-.dropdown-content {
-    display: none;
-    color: black;
+.dropdown-menu::after {
     position: absolute;
-    background: #1B3DA2;
-    top: 100%;
-    width: 100%;
+    content: '';
+    background-image: url("../image/downarrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 9px;
+    height: 4px;
+    padding-top: 23px;
+    padding-left: 8px;
+    color: rgba(72, 74, 204, 1);
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(23, 16, 62, 1);
+    opacity: 80%;
+    width: 330px;
+    height: 350px;
+    top: 80%;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.links-hidden {
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    padding: 24px 29px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.links-hidden {
+    display: block;
+}
+
+.dropdown-menu:hover .menu-content {
+    display: block;
 }
 
 @media screen and (max-width: 768px) {
@@ -96,6 +143,9 @@ img {
     }
     .header-right a:hover {
         background-color: inherit;
+    }
+    .dropdown-menu::after {
+        padding-top: 40px;
     }
     .toggle-button {
         display: inline-flex;
@@ -133,6 +183,9 @@ img {
     }
     .header-right a:hover {
         border-bottom: 3px solid #7256E5;
+    }
+    .dropdown-menu:hover {
+        color: rgba(72, 74, 204, 1);
     }
 }
 
