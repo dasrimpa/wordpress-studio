@@ -80,6 +80,7 @@
     }
     .footer-content-sociallinks a {
         padding-left: 10px;
+        padding-bottom: 10px;
     }
 }
 
@@ -88,10 +89,7 @@
         display: flex;
     }
     .footer-logo {
-        padding: 25px 0px 20px 20px;
-    }
-    .footer-logo img {
-        max-width: 80px;
+        padding: 25px 0px 0px 20px;
     }
     .footer-content {
         display: inline-flex;
@@ -120,13 +118,24 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1025px) {
     .footer-logo {
-        padding: 25px 0px 20px 150px;
+        padding: 0px 0px 20px 100px;
     }
     .footer-content {
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 40px;
+    }
+    .footer-content-sociallinks {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-logo {
+        padding: 0px 0px 0px 150px;
+    }
+    .footer-content {
+        padding-left: 50px;
     }
     .footer-logo h2 {
         font-size: 24px;
@@ -142,6 +151,7 @@
     }
     .footer-content-support {
         padding-top: 2px;
+        padding-left: 50px;
         font-size: 20px;
     }
     .footer-content-support ul li {
@@ -149,12 +159,13 @@
     }
     .footer-content-sociallinks {
         font-size: 20px;
+        padding-left: 50px;
     }
 }
 
 @media screen and (min-width: 1400px) {
     .footer-logo {
-        padding: 25px 0px 20px 200px;
+        padding: 0px 0px 0px 200px;
     }
     .footer-content {
         padding-left: 100px;
@@ -170,7 +181,7 @@
         padding-top: 129px;
     }
     .footer-logo {
-        padding: 0px 0px 0px 265px;
+        padding: 20px 0px 0px 265px;
     }
     .footer-logo h2 {
         line-height: 22.8px;
@@ -180,35 +191,19 @@
         line-height: 160%;
     }
     .footer-content {
-        padding: 0px 265px 0px 156px;
+        padding: 0px 0px 0px 156px;
     }
-    .footer__link--calculator {
-        width: 50px;
-        line-height: 25.76px;
-        padding: 0px 0px 0px 140px;
+    .footer-content-support {
+        padding-left: 170px;
     }
-    .footer__links--policy {
-        width: 103px;
-        line-height: 28.56px;
-        padding: 0px 0px 0px 30px;
+    .footer-content-sociallinks {
+        padding-left: 130px;
     }
-    .footer__links--service {
-        width: 103px;
-        line-height: 28.56px;
-        padding: 0px 0px 0px 30px;
+    .sociallinks-linkdn img {
+        padding-left: 20px;
     }
-    .footer__social_link p {
-        width: 105px;
-        line-height: 18.2px;
-        padding: 0px 0px 0px 30px;
-    }
-    .footer__social_link .icon {
-        margin-left: 35px;
-    }
-    .footer__social_link img {
-        padding-top: 20px;
-    }
-    .footer__social_link a {
-        padding-right: 10px;
+    .sociallinks-twitter img {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
