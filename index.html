@@ -17,11 +17,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
 
 
     <script src="js/swiper.js"></script>
     <title>Home Page</title>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            speed: 600,
+            parallax: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </head>
 
 <body>
@@ -267,6 +285,85 @@
         </h2>
         <p>Here are some authoritative information and statistical data on Wordpress Studio’s contribution to the world of businesses using Wordpress.</p>
         <img src="image/image-7.png">
+    </div>
+
+    <!-- Swiper -->
+
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+        <div class="parallax-bg" data-swiper-parallax="-2%"></div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <div class="text" data-swiper-parallax="-100">
+                    <p>
+                        WordPress studio works on flexible engagement models which allows to hire a team of skilled wordpress developers without any extra cost, Thanks Wordpress Studio.
+                    </p>
+                </div>
+                <div class="subtitle" data-swiper-parallax="-200">
+                    <h6><span class="subtitle-content-1">- Catherine Wales, companyname.com</span><span class="subtitle-content-2">Play Video</span></h6><img src="image/swiper-image.png"></div>
+            </div>
+            <div class="swiper-slide">
+
+
+                <div class="text-2" data-swiper-parallax="-100">
+                    <p>
+                        WordPress studio works on flexible engagement models which allows to hire a team of skilled wordpress developers without any extra cost, Thanks Wordpress Studio.
+                    </p>
+                </div>
+                <div class="subtitle-2" data-swiper-parallax="-200">
+                    <h6>- Catherine Wales, companyname.com<span>Play Video</span></h6><img src="image/swiper-image-2.png"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="text-3" data-swiper-parallax="-100">
+                    <p>
+                        WordPress studio works on flexible engagement models which allows to hire a team of skilled wordpress developers without any extra cost, Thanks Wordpress Studio.
+                    </p>
+                </div>
+                <div class="subtitle-3" data-swiper-parallax="-200">
+                    <h6>- Catherine Wales, companyname.com<span>Play Video</span></h6><img src="image/swiper-image-3.png"></div>
+
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!--top read section-->
+    <div class="top-read-section">
+        <h2>Weekly Top Reads
+        </h2>
+        <p>Stay tuned with us and get insights into latest WordPress trends</p>
+
+    </div>
+
+    <div class="card-section">
+        <div class="left-side-card">
+            <div class="left-side-card-first">
+                <img src="image/card-image-1.png">
+                <h3>Sed ut perspiciatis unde</h3>
+            </div>
+            <div class="left-side-card-second">
+                <img src="image/card-image-2.png">
+                <h3>Culpa qui officia deserunt</h3>
+            </div>
+            <div class="left-side-card-third">
+                <img src="image/card-image-3.png">
+                <h3>Et harum quidem</h3>
+            </div>
+        </div>
+        <div class="right-side-card">
+            <img src="image/card-image-4.png">
+            <h2>Sed ut perspiciatis unde</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.<br> Et harum quidem rerum facilis est et expedita distinctio.
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.</p>
+            <h3>March 29, 2021
+                <span>21k Likes</span></h3>
+        </div>
+    </div>
+    <div class="below-top-read">
+        <a href="#">View More Posts</a>
     </div>
     <!--technologies section-->
     <div class="technologies-section">
