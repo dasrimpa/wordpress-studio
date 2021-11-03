@@ -1,10 +1,15 @@
                             @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
-                            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap');
+                            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap');
                             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
                             @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;800;900&family=Open+Sans&display=swap');
                             @font-face {
                                 font-family: 'Poppins Regular';
                                 src: url('../font/Poppins-SemiBold.woff') format('woff');
+                            }
+                            
+                            @font-face {
+                                font-family: 'Poppins Bold';
+                                src: url('../font/Poppins-Bold.woff') format('woff');
                             }
                             
                             img {
@@ -109,6 +114,10 @@
                                 font-weight: bold;
                             }
                             
+                            .below-custom-website-first-button:hover {
+                                background: darkblue
+                            }
+                            
                             .below-custom-website-second-button {
                                 background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
                                 box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
@@ -118,6 +127,10 @@
                                 color: white;
                                 font-family: 'Open Sans', sans-serif;
                                 font-weight: bold;
+                            }
+                            
+                            .below-custom-website-second-button:hover {
+                                background: chocolate;
                             }
                             
                             @media screen and (max-width: 768px) {
@@ -332,6 +345,10 @@
                                 list-style: none;
                             }
                             
+                            .wordpress-logo img {
+                                margin-bottom: -18px;
+                            }
+                            
                             .below-ecommerce-solution-first-button {
                                 background: #484ACC;
                                 box-shadow: 0px 8px 30px rgba(72, 74, 204, 0.15);
@@ -344,6 +361,10 @@
                                 font-weight: bold;
                             }
                             
+                            .below-ecommerce-solution-first-button:hover {
+                                background: darkblue;
+                            }
+                            
                             .below-ecommerce-solution-second-button {
                                 background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
                                 box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
@@ -353,6 +374,10 @@
                                 color: white;
                                 font-family: 'Open Sans', sans-serif;
                                 font-weight: bold;
+                            }
+                            
+                            .below-ecommerce-solution-second-button:hover {
+                                background: chocolate;
                             }
                             
                             @media screen and (max-width: 768px) {
@@ -386,9 +411,6 @@
                                 .below-ecommerce-solution-logo img {
                                     margin-left: -25px;
                                     margin-right: 20px;
-                                }
-                                .kitbuilder-logo img {
-                                    padding-bottom: 15px;
                                 }
                                 .below-ecommerce-solution-first-button {
                                     margin-left: -30px;
@@ -458,9 +480,6 @@
                                     padding-left: 0px;
                                     padding-top: 10px;
                                 }
-                                .kitbuilder-logo img {
-                                    padding-bottom: 15px;
-                                }
                             }
                             /*custom theme section*/
                             
@@ -523,6 +542,10 @@
                                 margin-left: 5px;
                             }
                             
+                            .woo-commerce-logo img {
+                                margin-bottom: 13px;
+                            }
+                            
                             .below-custom-theme-button li {
                                 list-style: none;
                             }
@@ -539,6 +562,10 @@
                                 font-weight: bold;
                             }
                             
+                            .below-custom-theme-first-button:hover {
+                                background: darkblue;
+                            }
+                            
                             .below-custom-theme-second-button {
                                 background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
                                 box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
@@ -548,6 +575,10 @@
                                 color: white;
                                 font-family: 'Open Sans', sans-serif;
                                 font-weight: bold;
+                            }
+                            
+                            .below-custom-theme-second-button:hover {
+                                background: chocolate;
                             }
                             
                             @media screen and (max-width: 768px) {
@@ -710,6 +741,10 @@
                                 font-weight: bold;
                             }
                             
+                            .below-wordpress-conversion-first-button:hover {
+                                background: darkblue;
+                            }
+                            
                             .below-wordpress-conversion-second-button {
                                 background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
                                 box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
@@ -719,6 +754,10 @@
                                 color: white;
                                 font-family: 'Open Sans', sans-serif;
                                 font-weight: bold;
+                            }
+                            
+                            .below-wordpress-conversion-second-button:hover {
+                                background: chocolate;
                             }
                             
                             @media screen and (max-width: 768px) {
@@ -869,11 +908,15 @@
                                 background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                                font-family: 'Poppins Bold';
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-fisrt-item h4 {
                                 color: rgba(60, 60, 78, 1);
                                 margin-top: -65px;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-fisrt-item p {
@@ -894,11 +937,15 @@
                                 background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                                font-family: 'Poppins Bold';
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-second-item h4 {
                                 color: rgba(60, 60, 78, 1);
                                 margin-top: -65px;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-second-item p {
@@ -921,11 +968,15 @@
                                 background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                                font-family: 'Poppins Bold';
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-third-item h4 {
                                 color: rgba(60, 60, 78, 1);
                                 margin-top: -65px;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-third-item p {
@@ -948,11 +999,15 @@
                                 background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                                font-family: 'Poppins Bold';
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-fourth-item h4 {
                                 color: rgba(60, 60, 78, 1);
                                 margin-top: -65px;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-fourth-item p {
@@ -975,11 +1030,15 @@
                                 background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                                font-family: 'Poppins Bold';
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-fifth-item h4 {
                                 color: rgba(60, 60, 78, 1);
                                 margin-top: -65px;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-fifth-item p {
@@ -1002,11 +1061,15 @@
                                 background: -webkit-linear-gradient(left, #3d3d7e 38%, #ff4545 100%);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
+                                font-family: 'Poppins Bold';
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-sixth-item h4 {
                                 color: rgba(60, 60, 78, 1);
                                 margin-top: -65px;
+                                font-family: 'Raleway', sans-serif;
+                                font-weight: 700;
                             }
                             
                             .below-process-follow-sixth-item p {
@@ -1493,7 +1556,7 @@
                             .input-box::after {
                                 content: '';
                                 background-image: url("../image/arrow.png");
-                                width: 50px;
+                                width: 52px;
                                 height: 15px;
                                 position: absolute;
                             }
@@ -1518,8 +1581,8 @@
                                     margin-top: 10px;
                                 }
                                 .input-box::after {
-                                    left: 72%;
-                                    top: 63%;
+                                    left: 70%;
+                                    top: 71%;
                                 }
                             }
                             
@@ -1549,7 +1612,7 @@
                                     font-weight: 600;
                                 }
                                 .input-box::after {
-                                    left: 80%;
+                                    left: 75%;
                                     top: 60%;
                                 }
                             }
@@ -1586,6 +1649,7 @@
                             .help-section {
                                 text-align: center;
                                 padding-bottom: 30px;
+                                padding-top: 50px;
                             }
                             
                             .help-section h2 {
@@ -1809,25 +1873,30 @@
                                 font-weight: 700;
                             }
                             
-                            .swiper-slide {
+                            .image-swiper-slide {
                                 display: flex;
                             }
                             
                             @media screen and (min-width: 250px) {
-                                .swiper {
-                                    height: 100px;
+                                .image-swiper {
                                     width: 100%;
+                                    height: 200px;
+                                    margin-top: -100px;
+                                }
+                                .image-swiper-slide img {
+                                    width: 296px;
+                                    height: 100px;
                                 }
                             }
                             
                             @media screen and (min-width: 1200px) {
-                                .swiper {
+                                .image-swiper {
                                     width: 1000px;
                                 }
                             }
                             
                             @media screen and (min-width: 1900px) {
-                                .swiper {
+                                .image-swiper {
                                     width: 1500px;
                                 }
                             }
@@ -1835,6 +1904,9 @@
                             @media screen and (min-width: 1025px) {
                                 .technologies-section h2 {
                                     font-size: 40px;
+                                }
+                                .image-swiper {
+                                    width: 950px;
                                 }
                             }
                             
@@ -1919,7 +1991,7 @@
                             .left-side-card-second h3 {
                                 font-family: 'Poppins Regular';
                                 font-weight: 600;
-                                color: #282AA9;
+                                color: #3F4062;
                                 letter-spacing: 0.01em;
                                 padding-left: 20px;
                             }
@@ -1935,7 +2007,7 @@
                             .left-side-card-third h3 {
                                 font-family: 'Poppins Regular';
                                 font-weight: 600;
-                                color: #282AA9;
+                                color: #3F4062;
                                 letter-spacing: 0.01em;
                                 padding-left: 20px;
                             }
@@ -1978,6 +2050,10 @@
                                 margin-bottom: 50px;
                             }
                             
+                            .below-top-read a:hover {
+                                background: chocolate;
+                            }
+                            
                             .below-top-read a {
                                 background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
                                 box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
@@ -1986,6 +2062,8 @@
                                 border-radius: 60px;
                                 color: white;
                                 text-decoration: none;
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: bold;
                             }
                             
                             @media screen and (max-width: 1024px) {
@@ -2162,9 +2240,10 @@
                                     padding: 14px 60px 12px 60px;
                                 }
                             }
+                            /*swiper-slide*/
                             
                             .swiper-slide {
-                                padding: 70px 60px;
+                                padding: 70px 30px;
                             }
                             
                             .parallax-bg {
@@ -2182,7 +2261,9 @@
                             .swiper-slide .subtitle {
                                 font-size: 21px;
                                 position: relative;
-                                left: 25%;
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: 600;
+                                left: 28%;
                             }
                             
                             .swiper-slide .text {
@@ -2190,8 +2271,10 @@
                                 max-width: 400px;
                                 line-height: 1.3;
                                 position: relative;
-                                left: 25%;
+                                left: 28%;
                                 font-family: 'Raleway', sans-serif;
+                                font-weight: 500;
+                                font-style: italic;
                                 color: white;
                             }
                             
@@ -2208,10 +2291,21 @@
                                 color: white;
                             }
                             
+                            .subtitle h6::before {
+                                content: '';
+                                position: absolute;
+                                width: 80px;
+                                height: 50px;
+                                background-image: url("../image/play-button.png");
+                                display: block;
+                            }
+                            
                             .swiper-slide .subtitle-2 {
                                 font-size: 21px;
                                 position: relative;
-                                left: 15%;
+                                left: 24%;
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: 600;
                             }
                             
                             .swiper-slide .text-2 {
@@ -2219,8 +2313,10 @@
                                 max-width: 400px;
                                 line-height: 1.3;
                                 position: relative;
-                                left: 15%;
+                                left: 24%;
                                 font-family: 'Raleway', sans-serif;
+                                font-weight: 500;
+                                font-style: italic;
                                 color: white;
                             }
                             
@@ -2240,7 +2336,9 @@
                             .swiper-slide .subtitle-3 {
                                 font-size: 21px;
                                 position: relative;
-                                left: 3%;
+                                left: 18%;
+                                font-family: 'Open Sans', sans-serif;
+                                font-weight: 600;
                             }
                             
                             .swiper-slide .text-3 {
@@ -2248,8 +2346,10 @@
                                 max-width: 400px;
                                 line-height: 1.3;
                                 position: relative;
-                                left: 3%;
+                                left: 18%;
                                 font-family: 'Raleway', sans-serif;
+                                font-weight: 500;
+                                font-style: italic;
                                 color: white;
                             }
                             

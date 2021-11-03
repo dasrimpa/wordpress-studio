@@ -187,8 +187,8 @@ img {
         width: 110px;
         height: 20px;
     }
-    .header-right--started a:hover {
-        opacity: 0.8;
+    .header-right--started:hover {
+        background: chocolate;
     }
     .header-right a:hover {
         border-bottom: 3px solid #7256E5;

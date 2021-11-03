@@ -63,8 +63,12 @@
     font-weight: 700;
 }
 
-.footer-content-sociallinks a:hover {
-    opacity: 0.5;
+.footer-content-sociallinks :hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.5);
 }
 
 @media screen and (min-width: 250px) {
