@@ -63,7 +63,7 @@
     font-weight: 700;
 }
 
-.footer-content-sociallinks :hover {
+.footer-content-sociallinks img:hover {
     -ms-transform: scale(1.5);
     /* IE 9 */
     -webkit-transform: scale(1.5);
