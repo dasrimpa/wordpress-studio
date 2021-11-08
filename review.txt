@@ -1,0 +1,34 @@
+Desktop version :
+
+==============
+
+1.For the header logo, there should not use fixed-width - height and padding also. If padding is required,  then it can be added to its parent element. -done
+2.Check banner height -done
+3.Header Menu: all “li” has same class [or] no class -done
+4.Header Submenu: overlap with banner image -done
+5.Header menu mouse hover movement issue -done
+6.“Get started” hover effect should not have underline -done
+7.“TOP - LEVEL” text is uppercase as in design -done
+All through page hover effects should have a smooth effect.
+Social share icons disappear for the first time.
+
+
+All heading font-family are some so you can declare one time.
+Gapping between sections are not matching with the design
+All watermark texts are missing
+For the FaQ section, underline is missing after every question
+Does not match the outer layout of every section 
+There is a horizontal scroll on the page
+“Access to Trusted Technologies” section - images are distorted
+
+
+Mobile & Tablet version :
+
+====================
+
+1.The mobile menu does not clearly appear -done
+2.All images should be little in size -done
+All text areas should be maintained center align
+6 blocks section design should be more responsive design
+Heading texts size should be a little bit small
+Section-wise two buttons are in center align

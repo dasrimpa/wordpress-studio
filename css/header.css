@@ -12,45 +12,16 @@ img {
     max-width: 100%;
 }
 
-.header {
-    position: relative;
-}
-
 .header-right ul li a {
     font-family: 'Poppins Regular';
     font-size: 18px;
     text-decoration: none;
-}
-
-.header-right--home a {
     font-weight: 600;
-    color: #3A3A55;
-}
-
-.dropdown-menu {
-    font-family: 'Poppins Regular';
-    font-weight: 400;
-    color: #3A3A55;
-}
-
-.header-right--portfolio a {
-    font-weight: 400;
-    color: #3A3A55;
-}
-
-.header-right--blog a {
-    font-weight: 400;
-    color: #3A3A55;
-}
-
-.header-right--contact a {
-    font-weight: 400;
     color: #3A3A55;
 }
 
 .header-right--started a {
-    color: white;
-    font-weight: 600;
+    color: white !important;
 }
 
 .header-right--started {
@@ -79,6 +50,9 @@ img {
 .dropdown-menu {
     position: relative;
     display: inline-block;
+    font-family: 'Poppins Regular';
+    font-weight: 400;
+    color: #3A3A55;
 }
 
 .menu-content {
@@ -86,17 +60,20 @@ img {
     position: absolute;
     background-color: rgba(23, 16, 62, 1);
     opacity: 80%;
-    width: 330px;
+    width: 300px;
     height: 350px;
     top: 80%;
     border-radius: 15px;
-    z-index: 1;
+    z-index: 99;
+}
+
+.menu-content li a {
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 .links-hidden {
     display: inline-block;
     color: rgba(255, 255, 255, 1);
-    padding: 24px 29px;
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
@@ -113,9 +90,7 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    .header-logo img {
-        max-width: 60px;
-        max-height: 30px;
+    .header-logo {
         padding: 10px 0px 20px 30px;
     }
     .header-right {
@@ -126,6 +101,7 @@ img {
         border-top: 1px solid #ddd;
         display: none;
         line-height: 40px;
+        z-index: 99;
     }
     .header-right ul li a {
         font-size: 13px;
@@ -150,12 +126,14 @@ img {
     .dropdown-menu::after {
         padding-top: 40px;
     }
+    .links-hidden {
+        padding: 24px 29px;
+    }
     .toggle-button {
         display: inline-flex;
         font-size: 30px;
         color: #3A3A55;
         text-decoration: none;
-        margin-right: 10px;
         margin-top: 10px;
     }
 }
@@ -165,7 +143,7 @@ img {
         display: flex;
         justify-content: space-between;
     }
-    .header-logo img {
+    .header-logo {
         padding: 25px 0px 0px 30px;
     }
     .toggle-button {
@@ -186,12 +164,16 @@ img {
         border-radius: 40px;
         width: 110px;
         height: 20px;
+        transition: .2s;
     }
     .header-right--started:hover {
-        background: chocolate;
+        opacity: 0.8;
     }
     .header-right a:hover {
         border-bottom: 3px solid #7256E5;
+    }
+    .header-right--started a:hover {
+        border-bottom: none !important;
     }
     .dropdown-menu:hover {
         color: rgba(72, 74, 204, 1);
@@ -199,9 +181,7 @@ img {
 }
 
 @media screen and (min-width: 1025px) {
-    .header-logo img {
-        width: 78.6px;
-        height: 43.64px;
+    .header-logo {
         padding: 25px 0px 0px 30px;
     }
     .header-right--started {
@@ -212,7 +192,7 @@ img {
 }
 
 @media screen and (min-width: 1900px) {
-    .header-logo img {
+    .header-logo {
         padding: 10px 0px 0px 120px;
     }
     .header-right--started {
@@ -232,5 +212,9 @@ img {
     .header-right ul li {
         padding-left: 50px;
         padding-right: 50px;
+    }
+    .menu-content {
+        width: 330px;
+        height: 400px;
     }
 }
