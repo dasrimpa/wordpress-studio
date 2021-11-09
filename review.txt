@@ -9,11 +9,9 @@ Desktop version :
 5.Header menu mouse hover movement issue -done
 6.“Get started” hover effect should not have underline -done
 7.“TOP - LEVEL” text is uppercase as in design -done
+8.All heading font-family are some so you can declare one time -done
 All through page hover effects should have a smooth effect.
 Social share icons disappear for the first time.
-
-
-All heading font-family are some so you can declare one time.
 Gapping between sections are not matching with the design
 All watermark texts are missing
 For the FaQ section, underline is missing after every question

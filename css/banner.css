@@ -8,11 +8,17 @@
        width: 100%;
    }
    
+   .pagination {
+       position: absolute;
+       top: 33%;
+   }
+   
    .pagination .swiper-pagination-bullet {
        display: block;
        margin-top: 20px !important;
        width: 13px;
        height: 13px;
+       margin-left: 20px !important;
    }
    
    .pagination .swiper-pagination-bullet:hover {
@@ -28,14 +34,6 @@
    .pagination .swiper-pagination-bullet:active {
        color: #fff;
        background: rgba(211, 59, 114, 1);
-   }
-   
-   img {
-       max-width: 100%;
-   }
-   
-   body {
-       margin: 0;
    }
    
    .banner-image {
@@ -106,7 +104,7 @@
        padding: 10px 5px 10px 5px;
    }
    
-   .banner-content-started:hover {
+   .banner-content-started :hover {
        background: chocolate;
    }
    
@@ -153,7 +151,7 @@
            padding: 30px 10px 25px 10px;
            display: block;
        }
-       .banner-icon-bar a:hover {
+       .banner-icon-bar a :hover {
            -ms-transform: scale(1.5);
            /* IE 9 */
            -webkit-transform: scale(1.5);
