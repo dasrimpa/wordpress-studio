@@ -487,44 +487,45 @@
                 <a href="#" class="sociallinks-another"><img src="image/icon-8.png"></a>
             </div>
         </div>
+    </footer>
 
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <script src="js/header.js"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".myswiper", {
-                speed: 600,
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".myswiper", {
+            speed: 600,
 
-                parallax: true,
-                slideperview: 1,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            });
+            parallax: true,
+            slideperview: 1,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
 
-            var newswiper = new Swiper(".image-swiper", {
-                slidesPerView: 5,
-                spaceBetween: 4,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-            var swiper = new Swiper(".banner-swiper", {
-                direction: "horizontal",
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        </script>
+        var newswiper = new Swiper(".image-swiper", {
+            slidesPerView: 5,
+            spaceBetween: 4,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+        var swiper = new Swiper(".banner-swiper", {
+            direction: "horizontal",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

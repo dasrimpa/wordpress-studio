@@ -67,10 +67,6 @@
     line-height: 140%;
 }
 
-.links-hidden {
-    display: block;
-}
-
 .dropdown-menu:hover .menu-content {
     display: block;
 }
