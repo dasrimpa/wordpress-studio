@@ -1,0 +1,218 @@
+.header-right ul li a {
+    font-family: 'Poppins Regular';
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #3A3A55;
+}
+
+.header-right--started a {
+    color: white !important;
+}
+
+.header-right--started {
+    background: linear-gradient(279.8deg, #F36E23 22.22%, #F3A023 86.45%);
+    box-shadow: 0px 8px 14px rgba(244, 111, 36, 0.25);
+    text-align: center;
+}
+
+.header-right ul li {
+    list-style: none;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.dropdown-menu::after {
+    position: absolute;
+    content: '';
+    background-image: url("../image/downarrow.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 9px;
+    height: 4px;
+    padding-top: 23px;
+    padding-left: 8px;
+    color: rgba(72, 74, 204, 1);
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins Regular';
+    font-weight: 400;
+    color: #3A3A55;
+}
+
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(23, 16, 62, 1);
+    opacity: 80%;
+    width: 300px;
+    height: 350px;
+    top: 80%;
+    border-radius: 15px;
+    z-index: 99;
+}
+
+.menu-content li a {
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+.links-hidden {
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.dropdown-menu:hover .menu-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        position: absolute;
+        width: 100%;
+    }
+    .header-logo {
+        padding: 10px 0px 20px 30px;
+    }
+    .header-right {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        background: #E5E5E5;
+        border-top: 1px solid #ddd;
+        display: none;
+        line-height: 40px;
+        z-index: 99;
+    }
+    .header-right ul li a {
+        font-size: 13px;
+    }
+    .dropdown-menu {
+        font-size: 13px;
+    }
+    .header {
+        padding: 20px 0px;
+        justify-content: space-between;
+        display: flex;
+        position: relative;
+    }
+    .header-right--started {
+        width: 110px;
+        height: 40px;
+        border-radius: 50px;
+    }
+    .header-right a:hover {
+        background-color: inherit;
+    }
+    .dropdown-menu::after {
+        padding-top: 40px;
+    }
+    .links-hidden {
+        padding: 24px 29px;
+    }
+    .toggle-button {
+        display: inline-flex;
+        font-size: 30px;
+        color: #3A3A55;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-logo {
+        padding: 25px 0px 0px 30px;
+    }
+    .toggle-button {
+        display: none;
+    }
+    .header-right ul li {
+        display: inline-block;
+        padding: 25px 20px;
+    }
+    .header-right ul li a {
+        font-size: 15px;
+    }
+    .dropdown-menu {
+        font-size: 15px;
+    }
+    .header-right--started {
+        margin-right: 30px;
+        border-radius: 40px;
+        width: 110px;
+        height: 20px;
+        transition: all 0.3s ease;
+    }
+    .header-right--started:hover {
+        opacity: 0.8;
+    }
+    .header-right a:hover {
+        border-bottom: 3px solid #7256E5;
+    }
+    .header-right--started a:hover {
+        border-bottom: none !important;
+    }
+    .dropdown-menu:hover {
+        color: rgba(72, 74, 204, 1);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .header-logo {
+        padding: 25px 0px 0px 30px;
+    }
+    .header-right--started {
+        margin-right: 60px;
+        width: 120px;
+        height: 18px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .header-logo {
+        padding: 10px 0px 0px 120px;
+    }
+    .header-right--started {
+        margin-right: 120px;
+        width: 180px;
+        height: 20px;
+    }
+    .header-right ul li a {
+        font-size: 18px;
+    }
+    .dropdown-menu {
+        font-size: 18px;
+    }
+    .header {
+        padding-top: 57px;
+    }
+    .header-right ul li {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .menu-content {
+        width: 330px;
+        height: 400px;
+    }
+}
+
+.banner-image {
+    background-image: url("../image/bloglist-background.png");
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
