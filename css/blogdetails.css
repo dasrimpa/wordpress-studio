@@ -74,6 +74,11 @@
         font-weight: 600;
         letter-spacing: 0.01em;
         font-size: 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .list-item ul li a:hover {
+        opacity: 0.8;
     }
     
     .left-container-content p {
@@ -169,6 +174,9 @@
     }
     
     @media screen and (min-width: 1200px) {
+        .left-container-content {
+            text-align: left;
+        }
         .user-image img {
             width: 300px;
             height: 300px;
@@ -561,7 +569,7 @@
     .right-container-content h3,
     .right-container-content h4,
     .right-container-content h5 {
-        background: -webkit-linear-gradient(left, #3d3d7e 0%, #ff4545 68%);
+        background: -webkit-linear-gradient(left, #3d3d7e 6%, #ff4545 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: 'Raleway', sans-serif;
@@ -609,7 +617,7 @@
         font-weight: 600;
         letter-spacing: 0.01em;
         font-size: 15px;
-        background-color: rgba(197, 209, 227, 1);
+        background-color: #E8F1FB;
         transition: all .3s ease;
     }
     
@@ -702,7 +710,8 @@
     
     @media screen and (min-width:320px) {
         .right-container-content {
-            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
     
@@ -933,7 +942,8 @@
             margin: 100px 0px;
         }
         .news-letter-box {
-            margin-top: 700px;
+            margin-top: 600px;
+            margin-bottom: 100px;
         }
         .news-letter-content h2 {
             font-size: 55px;

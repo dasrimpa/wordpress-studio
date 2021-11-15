@@ -89,8 +89,9 @@
 }
 
 @media screen and (min-width: 769px) {
-    .footer {
+    .footer-section {
         display: flex;
+        justify-content: center;
     }
     .footer-logo {
         padding: 25px 0px 0px 20px;
@@ -126,9 +127,6 @@
     .footer-logo {
         padding: 0px 0px 20px 100px;
     }
-    .footer-content {
-        padding-left: 40px;
-    }
     .footer-content-sociallinks {
         padding-left: 40px;
     }
@@ -137,9 +135,6 @@
 @media screen and (min-width: 1200px) {
     .footer-logo {
         padding: 0px 0px 0px 150px;
-    }
-    .footer-content {
-        padding-left: 50px;
     }
     .footer-logo h2 {
         font-size: 24px;
@@ -170,10 +165,6 @@
 @media screen and (min-width: 1400px) {
     .footer-logo {
         padding: 0px 0px 0px 200px;
-    }
-    .footer-content {
-        padding-left: 100px;
-        padding-right: 100px;
     }
     .footer-content-quicklinks {
         padding-right: 80px;
