@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/blogdetails.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>Blog</title>
+    <link rel="icon" href="image/header-logo.png" type="image/x-icon">
+    <title>Blog Details</title>
 
 </head>
 
@@ -25,11 +25,11 @@
 
         <div class="header-right">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="homepage.html">Home</a></li>
 
-                <li><a href="#">Portfolio</a>
+                <li><a href="portfolio.html">Portfolio</a>
                 </li>
-                <li><a href="#">Blog</a></li>
+                <li><a href="bloglist.html" class="nav-list">Blog</a></li>
                 <li><a href="#">Contact</a></li>
                 <li class="header-right--started"><a href="#">Get Started </a>
                 </li>
@@ -44,9 +44,9 @@
 
     <!--banner-section-->
     <div class="banner banner-image">
-
-
     </div>
+
+
     <!--left-container-->
     <div class="container">
         <div class="left-container">
@@ -60,7 +60,7 @@
                 <div class="date">
                     <h6>08 May, 2021</h6>
                 </div>
-                <h2>Custom Theme Design and Development</h2>
+                <h2 class="custom-theme">Custom Theme Design and Development</h2>
                 <div class="list-item">
                     <ul>
                         <li><a href="#">Theme</a></li>
@@ -68,12 +68,13 @@
                         <li><a href="#">Development</a></li>
                     </ul>
                 </div>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
-                    of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. <br>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
+                <p class="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+                    of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. <br>
+                    <span class="blog-second-description description">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
                     on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
-                    injected humour, or non-characteristic words etc.</p>
-                <img src="image/blogdetails-image-2.png">
-                <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    injected humour, or non-characteristic words etc.</span></p>
+                <img src="image/blogdetails-image-2.png" class="left-container-image">
+                <p class="description">t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
                     'Content here, content here', making it look like readable English. </p>
 
                 <div class="message-section">
@@ -137,14 +138,16 @@
                                 <input type="text" placeholder="Webiste URL" class="form-control-website form-section">
                             </div>
                             <div class="form-box-contact form-box-content">
-                                <input type="email" placeholder="Email" class="form-control-contact form-section">
+                                <input type="email" placeholder="Email" class="form-control-contact form-section email">
                                 <input type="number" placeholder="Contact (Optional)" class="form-control-contact form-section contact">
                             </div>
                             <div class="form-box-message form-box-content">
                                 <textarea placeholder="Your message" class="form-control-message form-section"></textarea>
                             </div>
                             <div class="form-box-chackbox form-box-content">
-                                <input type="checkbox" class="form-control-chackbox form-section">
+                                <input type="checkbox" class="form-control-chackbox checkmark">
+
+
                                 <p>Post this message as anonymus</p>
                             </div>
                             <div class="form-box-submit-btn">
@@ -229,7 +232,7 @@
                     <div class="below-top-picks">
                         <ul>
                             <li><a href="#" class="below-top-picks-first">Popular</a></li>
-                            <li><a href="#" below-top-picks-first>Featured</a></li>
+                            <li><a href="#" class="below-top-picks-second">Featured</a></li>
                         </ul>
                     </div>
                     <div class="below-top-picks-first-user below-top-picks-user">

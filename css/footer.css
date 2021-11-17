@@ -89,18 +89,23 @@
 }
 
 @media screen and (min-width: 769px) {
+    .footer {
+        margin-top: 50px;
+    }
     .footer-section {
         display: flex;
         justify-content: center;
     }
     .footer-logo {
         padding: 25px 0px 0px 20px;
+        text-align: left;
     }
     .footer-content {
         display: inline-flex;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 15px;
+        text-align: left;
     }
     .footer-logo p {
         width: 300px;
@@ -137,7 +142,7 @@
         padding-top: 30px;
     }
     .footer-section {
-        margin-left: -150px;
+        margin-left: -100px;
     }
     .footer-content-quicklinks h2 {
         width: 167px;
@@ -175,6 +180,9 @@
         padding-left: 20px;
         padding-right: 20px;
     }
+    .footer-content-quicklinks li a {
+        margin-left: -25px;
+    }
 }
 
 @media screen and (min-width: 1900px) {
@@ -195,7 +203,7 @@
         padding: 0px 0px 0px 50px;
     }
     .footer-content-support {
-        padding-left: 170px;
+        padding-left: 150px;
     }
     .footer-content-sociallinks {
         padding-left: 100px;

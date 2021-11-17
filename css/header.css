@@ -2,12 +2,13 @@
     font-family: 'Poppins Regular';
     font-size: 18px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 400;
     color: #3A3A55;
 }
 
 .header-right--started a {
     color: white !important;
+    font-weight: 600 !important;
 }
 
 .header-right--started {
@@ -69,6 +70,10 @@
 
 .dropdown-menu:hover .menu-content {
     display: block;
+}
+
+.header-right .nav-list {
+    font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
@@ -174,26 +179,21 @@
 }
 
 @media screen and (min-width: 1900px) {
-    .header-logo {
-        padding: 10px 0px 0px 120px;
-    }
     .header-right--started {
-        margin-right: 120px;
-        width: 180px;
-        height: 20px;
-    }
-    .header-right ul li a {
-        font-size: 18px;
+        width: 185px;
+        height: 15px;
     }
     .dropdown-menu {
         font-size: 18px;
     }
     .header {
-        padding-top: 57px;
+        padding: 75px 119px;
     }
-    .header-right ul li {
-        padding-left: 50px;
-        padding-right: 50px;
+    .header-right ul li a {
+        padding: 0px 15px;
+    }
+    .header-right li {
+        margin-top: -12px;
     }
     .menu-content {
         width: 330px;
