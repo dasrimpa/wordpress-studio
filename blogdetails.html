@@ -171,17 +171,18 @@
                         <p>Et harum quidem</p>
                     </div>
                 </div>
-                <div class="navigation-section">
-                    <ul>
-                        <li>
-                            <a href="#" class="image"><img src="image/previousbutton.png"></a>
-                        </li>
-                        <li><a href="#" class="previous">Previous Blog</a></li>
-                        <li><a href="#" class="next">Next Blog</a></li>
-                        <li>
-                            <a href="#" class="image"><img src="image/nextbutton.png"></a>
-                        </li>
-                    </ul>
+                <div class="pagination">
+                    <div class="pagination-icon">
+                        <a href="#"><img src="image/previousbutton.png"></a>
+                        <div class="pagination-list-item">
+                            <ul>
+                                <li><a href="#" class="previous">Previous Blog</a></li>
+                                <li><a href="#" class="next">Next Blog</a></li>
+
+                            </ul>
+                        </div>
+                        <a href="#"><img src="image/nextbutton.png"></a>
+                    </div>
                 </div>
             </div>
 
@@ -226,39 +227,68 @@
                         <li><a href="#">Industrial</a></li>
                     </ul>
                 </div>
-                <h4>Top Picks</h4>
+                <h4><span class="top-picks">Top Picks</span></h4>
                 <div class="right-inner-container">
 
-                    <div class="below-top-picks">
+                    <div class="below-top-picks tab">
                         <ul>
-                            <li><a href="#" class="below-top-picks-first">Popular</a></li>
-                            <li><a href="#" class="below-top-picks-second">Featured</a></li>
+                            <li><a href="#" class="below-top-picks-first tablinks" onclick="openCity(event, 'London')">Popular</a></li>
+                            <li><a href="#" class="below-top-picks-second tablinks" onclick="openCity(event, 'Paris')">Featured</a></li>
                         </ul>
                     </div>
-                    <div class="below-top-picks-first-user below-top-picks-user">
-                        <img src="image/user-1.png">
-                        <a href="#">3 Easy ways to control the traffic
+                    <div id="London" style=" display:block;">
+                        <div class="below-top-picks-first-user below-top-picks-user">
+                            <img src="image/user-1.png">
+                            <a href="#">3 Easy ways to control the traffic
                             of your webiste..<br><span class="date">May 05, 2021</span></a>
 
-                    </div>
-                    <div class="below-top-picks-second-user below-top-picks-user">
-                        <img src="image/user-2.png">
-                        <a href="#">10 Ways to kickstart your new 
+                        </div>
+                        <div class="below-top-picks-second-user below-top-picks-user">
+                            <img src="image/user-2.png">
+                            <a href="#">10 Ways to kickstart your new 
                             website development..<br><span class="date">Apr 29, 2021</span></a>
 
-                    </div>
-                    <div class="below-top-picks-third-user below-top-picks-user">
-                        <img src="image/user-3.png">
-                        <a href="#">How to make smooth loading of
+                        </div>
+                        <div class="below-top-picks-third-user below-top-picks-user">
+                            <img src="image/user-3.png">
+                            <a href="#">How to make smooth loading of
                             heavy images in development..<br><span class="date">Apr 29, 2021</span></a>
 
-                    </div>
-                    <div class="below-top-picks-third-user below-top-picks-user">
-                        <img src="image/user-4.png">
-                        <a href="#">10 Ways to kickstart your new 
+                        </div>
+                        <div class="below-top-picks-third-user below-top-picks-user">
+                            <img src="image/user-4.png">
+                            <a href="#">10 Ways to kickstart your new 
                             website development..<br><span class="date">Apr 26, 2021</span></a>
 
+                        </div>
                     </div>
+                    <div id="Paris" class="tabcontent">
+                        <div class="below-top-picks-first-user below-top-picks-user">
+                            <img src="image/user-1.png">
+                            <a href="#">3 Easy ways to control the traffic
+                                of your webiste..<br><span class="date">May 05, 2021</span></a>
+
+                        </div>
+                        <div class="below-top-picks-second-user below-top-picks-user">
+                            <img src="image/user-2.png">
+                            <a href="#">10 Ways to kickstart your new 
+                                website development..<br><span class="date">Apr 29, 2021</span></a>
+
+                        </div>
+                        <div class="below-top-picks-third-user below-top-picks-user">
+                            <img src="image/user-3.png">
+                            <a href="#">How to make smooth loading of
+                                heavy images in development..<br><span class="date">Apr 29, 2021</span></a>
+
+                        </div>
+                        <div class="below-top-picks-third-user below-top-picks-user">
+                            <img src="image/user-4.png">
+                            <a href="#">10 Ways to kickstart your new 
+                                website development..<br><span class="date">Apr 26, 2021</span></a>
+
+                        </div>
+                    </div>
+
                 </div>
                 <!--right-container-content-second-->
                 <h5>Categories</h5>
@@ -383,7 +413,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/header.js"></script>
 
-
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 
 </html>
