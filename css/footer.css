@@ -209,3 +209,203 @@
         padding-left: 100px;
     }
 }
+
+.below-first-footer {
+    background-color: linear-gradient(88.15deg, #F4F7FA 36.58%, #FEF7F5 67.09%);
+    background-size: cover;
+    height: 165px;
+}
+
+
+/*news letter section*/
+
+.second-container {
+    justify-content: center;
+    display: flex;
+}
+
+.news-letter-box {
+    background: linear-gradient( 77.93deg, #2D2AA6 -38.39%, #3C26C9 6.45%, #2E55E1 76.08%, #309BFD 110.61%);
+    box-shadow: inset -10px -6px 35px rgba(110, 115, 251, 0.5);
+}
+
+.news-letter-content {
+    text-align: center;
+}
+
+.news-letter-content h2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    line-height: 95%;
+}
+
+.news-letter-content p {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.news-form-control {
+    border: none;
+}
+
+.news-form-control {
+    background: #FFFFFF;
+    box-shadow: 10px 23px 55px rgba(101, 93, 177, 0.15);
+}
+
+.news-input-box input {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #50515F;
+}
+
+.news-letter-form {
+    position: relative;
+}
+
+.news-input-box::after {
+    content: '';
+    background-image: url("../image/arrow.png");
+    width: 52px;
+    height: 15px;
+    position: absolute;
+}
+
+@media screen and (max-width:768px) {
+    .news-letter-box {
+        min-height: 320px;
+        margin-top: 80px;
+    }
+    .news-letter-content h2 {
+        font-size: 40px;
+    }
+    .news-letter-content p {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .news-form-control {
+        width: 300px;
+        height: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 30px;
+        margin-top: 10px;
+    }
+    .news-letter-content h2::after {
+        width: 73px;
+        height: 58px;
+    }
+}
+
+@media screen and (min-width:320px) {
+    .news-input-box::after {
+        margin-left: -65px;
+        margin-top: 27px;
+    }
+}
+
+@media screen and (min-width:420px) {
+    .news-letter-content h2::after {
+        content: '';
+        position: absolute;
+        background-image: url("../image/message.png");
+        background-repeat: no-repeat;
+        width: 83px;
+        height: 68px;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .news-letter-box {
+        width: 600px;
+        height: 400px;
+        border-radius: 0px 150px;
+        margin-top: 50px;
+    }
+    .news-letter-content h2 {
+        font-size: 50px;
+    }
+    .news-form-control {
+        width: 400px;
+        height: 50px;
+        border-radius: 80px;
+        margin-top: 20px;
+    }
+    .news-input-box input {
+        padding-left: 30px;
+    }
+    .news-input-box::after {
+        margin-top: 38px;
+        left: 78%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .news-letter-box {
+        width: 1070px;
+        height: 500px;
+        border-radius: 0px 150px;
+    }
+    .news-letter-content {
+        margin: 100px 0px;
+    }
+    .news-letter-box {
+        margin-top: 600px;
+        margin-bottom: 100px;
+    }
+    .news-letter-content h2 {
+        font-size: 55px;
+    }
+    .news-letter-content p {
+        width: 666px;
+        padding-left: 200px;
+    }
+    .news-form-control {
+        width: 700px;
+        height: 70px;
+    }
+    .news-input-box input {
+        padding-left: 60px;
+    }
+    .news-input-box::after {
+        margin-top: 45px;
+    }
+    .news-input-box::after {
+        left: 76%;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .news-letter-box {
+        width: 1392px;
+        height: 664px;
+        margin-top: 600px !important;
+        margin-bottom: 100px;
+    }
+    .news-letter-content {
+        margin: 198px 0px;
+    }
+    .news-letter-content p {
+        padding-left: 363px;
+        padding-right: 362px;
+    }
+    .news-form-control {
+        width: 715px;
+        height: 100px;
+    }
+    .news-input-box input {
+        padding-left: 60px;
+    }
+    .news-input-box::after {
+        margin-top: 60px;
+    }
+    .news-input-box::after {
+        left: 70%;
+    }
+}
