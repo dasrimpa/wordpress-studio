@@ -76,6 +76,18 @@
     font-weight: 600;
 }
 
+.sticky-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+}
+
+.sticky-header.black {
+    background: #E5E5E5;
+    height: 110px;
+}
+
 @media screen and (max-width: 768px) {
     .header-logo {
         padding: 10px 0px 20px 30px;
@@ -198,5 +210,8 @@
     .menu-content {
         width: 330px;
         height: 400px;
+    }
+    .homepage-header-right ul {
+        margin-right: 150px;
     }
 }

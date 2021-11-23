@@ -17,7 +17,7 @@
 
 <body>
     <!--header section-->
-    <header class="header">
+    <header class="header sticky-header">
         <div class="header-logo">
             <a href="portfolio.html">
                 <img src="image/portfolio-header-logo.png" alt="Logo">
@@ -26,12 +26,12 @@
 
         <div class="header-right">
             <ul>
-                <li><a href="homepage.html">Home</a></li>
+                <li><a href="homepage.html" class="header-list">Home</a></li>
 
-                <li><a href="portfolio.html">Portfolio</a>
+                <li><a href="portfolio.html" class="header-list portfolio">Portfolio</a>
                 </li>
-                <li><a href="bloglist.html">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="bloglist.html" class="header-list">Blog</a></li>
+                <li><a href="#" class="header-list">Contact</a></li>
                 <li class="header-right--started"><a href="#">Get Started </a>
                 </li>
             </ul>
@@ -55,18 +55,8 @@
                         <li><a href="#" class="list-item-all">All  </a></li>
                         <li><a href="#">Custom website design and development</a></li>
                         <li><a href="#">eCommerce solutions</a></li>
-                    </ul>
-                </div>
-                <div class="below-header-second-list list-item">
-                    <ul>
-
                         <li><a href="#">Custom theme design and development</a></li>
                         <li><a href="#">Figma/Sketch/PSD to WordPress conversion</a></li>
-                    </ul>
-                </div>
-                <div class="below-header-third-list list-item">
-                    <ul>
-
                         <li><a href="#">Figma/Sketch/PSD to HTML conversion </a></li>
                     </ul>
                 </div>
@@ -120,9 +110,9 @@
         <div class="right-container">
             <div class="right-container-content right-container-content-first">
                 <div class="right-container-first container-item">
-                    <a href="#"><img src="image/portfolio-image-2.png">
-                        <h3>Glamified</h3>
-                        <p>10 Beauty Products Web Landing page Figma Template</p>
+                    <a href="#"><img src="image/portfolio-image-2.png"></a>
+                    <h3>Glamified</h3>
+                    <p>10 Beauty Products Web Landing page Figma Template</p>
                 </div>
 
                 <div class="right-container-second container-item">
@@ -176,7 +166,7 @@
 
     <!--news letter section-->
     <div class="second-container">
-        <div class="news-letter-box">
+        <div class="news-letter-box portfolio-letter-box">
             <div class="news-letter-content">
                 <h2>Newsletter</h2>
                 <p>Get updates on the upcoming WordPress trends, themes, and plugins. Subscribe to our weekly newsletter.</p>
@@ -191,7 +181,6 @@
             </div>
         </div>
     </div>
-
     <!--footer section-->
     <footer class="footer foot">
         <div class="footer-section">
@@ -231,6 +220,11 @@
                     <a href="#" class="sociallinks-another"><img src="image/icon-8.png"></a>
                 </div>
             </div>
+        </div>
+    </footer>
+    <footer class="below-first-footer">
+        <div class="below-first-footer-content">
+            <p>Copyright © 2021. All Rights Reserved. </p>
         </div>
     </footer>
     <!--popup-->

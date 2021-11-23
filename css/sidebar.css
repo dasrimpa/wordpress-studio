@@ -99,17 +99,9 @@
      margin-left: -20px;
  }
  
- .below-top-picks-first {
-     background-color: #4D4EA1;
-     color: #ffffff;
- }
- 
- .below-top-picks-second {
+ .below-top-picks li a {
      color: #4D4EA1;
- }
- 
- .below-top-picks ul li a:hover {
-     opacity: 0.8;
+     cursor: pointer;
  }
  
  .below-top-picks-user {
@@ -124,7 +116,11 @@
      line-height: 140%;
      font-family: 'Open Sans', sans-serif;
      font-weight: bold;
-     margin: 18px 10px;
+     margin: 20px 10px;
+ }
+ 
+ .last-user {
+     padding-bottom: 20px;
  }
  
  .below-top-picks-user a:hover {
@@ -138,6 +134,23 @@
      line-height: 160%;
      font-family: 'Poppins Regular';
      font-weight: 500;
+ }
+ 
+ .content {
+     display: none;
+ }
+ 
+ .content.active {
+     display: block;
+ }
+ 
+ a.tab-button:hover {
+     opacity: 0.8;
+ }
+ 
+ .tab-button.active {
+     background-color: #4D4EA1;
+     color: white;
  }
  
  @media screen and (min-width:320px) {
@@ -308,13 +321,7 @@
      }
  }
  
- @media screen and (min-width:768px) {
-     .right-container-content h5 {
-         margin-top: 120px;
-     }
-     .right-inner-container-list-item ul li::before {
-         left: 3%;
-     }
+ @media screen and (min-width:520px) {
      .list-number {
          display: inline-block;
          position: absolute;
@@ -325,6 +332,15 @@
          line-height: 160%;
          letter-spacing: 0.02em;
          color: #73738F;
+     }
+ }
+ 
+ @media screen and (min-width:768px) {
+     .right-container-content h5 {
+         margin-top: 120px;
+     }
+     .right-inner-container-list-item ul li::before {
+         left: 3%;
      }
  }
  
@@ -358,7 +374,7 @@
  }
  
  .below-community img {
-     margin: 48px 20px 0px 0px;
+     margin: 48px 0px 0px 0px;
  }
  
  .below-community-btn a {
@@ -370,7 +386,7 @@
      box-shadow: 0px 8px 30px rgba(244, 111, 36, 0.25);
      border-radius: 60px;
      border: none;
-     padding: 20px 50px 20px 50px;
+     padding: 10px 30px 10px 30px;
      color: #ffffff;
      font-family: 'Open Sans', sans-serif;
      font-weight: bold;
@@ -386,6 +402,8 @@
      opacity: 0.8;
  }
  
- .tabcontent {
-     display: none;
+ @media screen and (min-width:768px) {
+     .below-community-btn a {
+         padding: 20px 50px 20px 50px;
+     }
  }

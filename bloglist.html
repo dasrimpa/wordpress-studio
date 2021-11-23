@@ -323,66 +323,71 @@
                 </div>
 
                 <h4><span class="top-picks">Top Picks</span></h4>
-                <div class="right-inner-container">
+                <div class="right-inner-container wrapper">
 
-                    <div class="below-top-picks tab">
+                    <div class="below-top-picks tab buttonWrapper">
                         <ul>
-                            <li><a href="#" class="below-top-picks-first tablinks" onclick="openCity(event, 'London')">Popular</a></li>
-                            <li><a href="#" class="below-top-picks-second tablinks" onclick="openCity(event, 'Paris')">Featured</a></li>
+                            <li><a class="tab-button active below-top-picks-first" data-id="home">Popular</a></li>
+                            <li class="below-top-picks-second"><a class="tab-button" data-id="about">Featured</a></li>
                         </ul>
                     </div>
-                    <div id="London" style=" display:block;">
-                        <div class="below-top-picks-first-user below-top-picks-user">
-                            <img src="image/user-1.png">
-                            <a href="#">3 Easy ways to control the traffic
+                    <div class="contentWrapper">
+                        <div class="content active" id="home">
+                            <div class="below-top-picks-first-user below-top-picks-user">
+                                <img src="image/user-1.png">
+                                <a href="#">3 Easy ways to control the traffic
                             of your webiste..<br><span class="date">May 05, 2021</span></a>
 
-                        </div>
-                        <div class="below-top-picks-second-user below-top-picks-user">
-                            <img src="image/user-2.png">
-                            <a href="#">10 Ways to kickstart your new 
+                            </div>
+                            <div class="below-top-picks-second-user below-top-picks-user">
+                                <img src="image/user-2.png">
+                                <a href="#">10 Ways to kickstart your new 
                             website development..<br><span class="date">Apr 29, 2021</span></a>
 
-                        </div>
-                        <div class="below-top-picks-third-user below-top-picks-user">
-                            <img src="image/user-3.png">
-                            <a href="#">How to make smooth loading of
+                            </div>
+                            <div class="below-top-picks-third-user below-top-picks-user">
+                                <img src="image/user-3.png">
+                                <a href="#">How to make smooth loading of
                             heavy images in development..<br><span class="date">Apr 29, 2021</span></a>
 
-                        </div>
-                        <div class="below-top-picks-third-user below-top-picks-user">
-                            <img src="image/user-4.png">
-                            <a href="#">10 Ways to kickstart your new 
+                            </div>
+                            <div class="below-top-picks-third-user below-top-picks-user last-user">
+                                <img src="image/user-4.png">
+                                <a href="#">10 Ways to kickstart your new 
                             website development..<br><span class="date">Apr 26, 2021</span></a>
 
+                            </div>
                         </div>
-                    </div>
-                    <div id="Paris" class="tabcontent">
-                        <div class="below-top-picks-first-user below-top-picks-user">
-                            <img src="image/user-1.png">
-                            <a href="#">3 Easy ways to control the traffic
+
+                        <div class="content" id="about">
+                            <div class="below-top-picks-first-user below-top-picks-user">
+                                <img src="image/user-3.png">
+                                <a href="#">3 Easy ways to control the traffic
                                 of your webiste..<br><span class="date">May 05, 2021</span></a>
 
-                        </div>
-                        <div class="below-top-picks-second-user below-top-picks-user">
-                            <img src="image/user-2.png">
-                            <a href="#">10 Ways to kickstart your new 
+                            </div>
+                            <div class="below-top-picks-second-user below-top-picks-user">
+                                <img src="image/user-1.png">
+                                <a href="#">10 Ways to kickstart your new 
                                 website development..<br><span class="date">Apr 29, 2021</span></a>
 
-                        </div>
-                        <div class="below-top-picks-third-user below-top-picks-user">
-                            <img src="image/user-3.png">
-                            <a href="#">How to make smooth loading of
+                            </div>
+                            <div class="below-top-picks-third-user below-top-picks-user">
+                                <img src="image/user-4.png">
+                                <a href="#">How to make smooth loading of
                                 heavy images in development..<br><span class="date">Apr 29, 2021</span></a>
 
-                        </div>
-                        <div class="below-top-picks-third-user below-top-picks-user">
-                            <img src="image/user-4.png">
-                            <a href="#">10 Ways to kickstart your new 
+                            </div>
+                            <div class="below-top-picks-third-user below-top-picks-user last-user">
+                                <img src="image/user-2.png">
+                                <a href="#">10 Ways to kickstart your new 
                                 website development..<br><span class="date">Apr 26, 2021</span></a>
 
+                            </div>
                         </div>
                     </div>
+
+
 
                 </div>
                 <!--right-container-content-second-->
@@ -496,18 +501,24 @@
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="footer-content-sociallinks">
+                <div class="footer-content-sociallinks blogsocialicon">
                     <h2>Social Links</h2>
-                    <a href="#" class="sociallinks-facebook"><img src="image/icon-5.png"></a>
-                    <a href="#" class="sociallinks-linkdn"><img src="image/icon-6.png"></a>
-                    <a href="#" class="sociallinks-twitter"><img src="image/icon-7.png"></a>
-                    <a href="#" class="sociallinks-another"><img src="image/icon-8.png"></a>
+                    <a href="#" class="sociallinks-facebook"><img src="image/blogicon-1.png"></a>
+                    <a href="#" class="sociallinks-linkdn"><img src="image/blogicon-2.png"></a>
+                    <a href="#" class="sociallinks-twitter"><img src="image/blogicon-3.png"></a>
+                    <a href="#" class="sociallinks-another"><img src="image/blogicon-4.png"></a>
                 </div>
             </div>
         </div>
     </footer>
+    <footer class="below-first-footer">
+        <div class="below-first-footer-content">
+            <p>Copyright © 2021. All Rights Reserved. </p>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/tabformat.js"></script>
 
 
 </body>

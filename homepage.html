@@ -19,17 +19,17 @@
 
 <body>
     <!--header section-->
-    <header class="header">
+    <header class="header sticky-header">
         <div class="header-logo">
             <a href="index.html">
                 <img src="image/header-logo.png" alt="Logo">
             </a>
         </div>
 
-        <div class="header-right">
+        <div class="header-right homepage-header-right">
             <ul>
                 <li><a href="homepage.html" class="nav-list">Home</a></li>
-                <li class="dropdown-menu" id="flip">services
+                <li class="dropdown-menu">services
                     <ul class="menu-content">
                         <li><a class="links-hidden" href="#">Custom Website Design 
                             and Development</a></li>
@@ -492,9 +492,15 @@
             </div>
         </div>
     </footer>
+    <footer class="below-first-footer">
+        <div class="below-first-footer-content">
+            <p>Copyright © 2021. All Rights Reserved. </p>
+        </div>
+    </footer>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="js/header.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
@@ -529,6 +535,19 @@
                 clickable: true,
             },
         });
+
+
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop()) {
+                $('header').addClass('black');
+            } else {
+                $('header').removeClass('black');
+            }
+        })
     </script>
 </body>
 
