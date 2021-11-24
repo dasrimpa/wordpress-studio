@@ -278,6 +278,12 @@
         .left-message-section {
             margin-top: -15px;
         }
+        .user-name h2 {
+            padding-left: 0px;
+        }
+        .date h6 {
+            padding-right: 0px;
+        }
     }
     
     .left-container-user {
@@ -389,9 +395,9 @@
         }
         .left-container-content-second h3 {
             font-size: 40px;
-        }
-        .left-container-content-second h3 {
-            font-size: 30px;
+            background: linear-gradient(to right, #3d3d7e 5%, #ff4545 64%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .user-message h4 {
             font-size: 30px;

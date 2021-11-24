@@ -30,3 +30,55 @@ All text areas should be maintained center align
 6 blocks section design should be more responsive design
 Heading texts size should be a little bit small
 Section-wise two buttons are in center align
+
+
+
+24.11.21:
+
+Wordpress Studio
+
+====================
+
+Blog & Blog details
+
+———————————
+
+
+
+ 1. Header: Get started button is large for 1366px
+
+The header does not match properly with the design
+Responsive menu styling needs to be changed. It was discussed earlier. Follow that.
+Author image rounded styling should be made by CSS
+The author name should be aligned left and the post date is aligned right. There is some space on both sides, remove them.-done
+The first category name of Post categories should be extreme left-aligned. There is some space on the left.
+“Comments(08)” text styling does not match with design for 1920px resolution.-done
+Pagination styling does not match.
+“Similar blog” blog box styling does not match.
+Newsletter form arrow position is not the same as the design.-done
+There is some extra space on the left side of the footer navigation menus.
+The spaces between social icons in the footer are too large. Need to reduce.-done
+The Mobile version does not look pretty. It was discussed how to be made prettier. Follow that.
+
+
+Portfolio. 
+
+——————
+
+For the main content area, follow the tab format for “All, Custom website design,eCommerce solution….”-done
+Line height needs to be higher for the page title. - “Explore projects From the Portfolio List” -done
+The modal popup close button does not look nice. Make it prettier. Also, look into mobile resolution.-done
+
+
+Home
+
+—————
+
+Banner bullet pagination for mobile looks horizontally. Make it vertically only for the desktop version.
+There is a page scroller for mobile view. Remove this.
+In the console, there is some error. Needs to fix.
+Six circle section does not look Nice for the mobile version. Needs to fix.
+Newsletter form design breaks in mobile version.
+The slider section for testimonial and logo section does not look nice. Needs to fix.
+
+

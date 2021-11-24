@@ -177,6 +177,9 @@
     .dropdown-menu:hover {
         color: rgba(72, 74, 204, 1);
     }
+    .blog-header {
+        padding: 20px 30px;
+    }
 }
 
 @media screen and (min-width: 1025px) {
